@@ -22,6 +22,10 @@ out/
 build
 dist
 
+# Typescript
+*.tsbuildinfo
+next-env.d.ts
+
 # Logs
 logs/
 *.log
