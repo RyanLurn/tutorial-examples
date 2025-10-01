@@ -1,21 +1,21 @@
 {
   "name": "tutorial-examples",
   "version": "1.0.0",
-  "type": "module",
-  "scripts": {
-    "lint": "biome lint --write",
-    "format": "biome format --write",
-    "check": "biome check --write",
-    "list-deps": "syncpack list --sort count",
-    "lint-deps": "syncpack lint",
-    "fix-deps": "syncpack fix",
-    "update-deps": "syncpack update",
-    "check-deps": "syncpack update --check"
-  },
-  "packageManager": "pnpm@10.17.1",
   "devDependencies": {
     "@biomejs/biome": "2.2.4",
     "lefthook": "^1.13.6",
     "syncpack": "14.0.0-alpha.23"
-  }
+  },
+  "packageManager": "pnpm@10.17.1",
+  "scripts": {
+    "check": "biome check --write",
+    "format": "biome format --write",
+    "lint": "biome lint --write",
+    "syncpack:fix": "pnpm exec syncpack fix",
+    "syncpack:format": "pnpm exec syncpack format",
+    "syncpack:lint": "pnpm exec syncpack lint",
+    "syncpack:list": "pnpm exec syncpack list --sort count",
+    "syncpack:update": "pnpm exec syncpack update"
+  },
+  "type": "module"
 }
