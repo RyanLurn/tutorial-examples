@@ -1,14 +1,10 @@
 {
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "@repo/ts-config/node.json",
   "compilerOptions": {
-    "target": "ESNext",
-    "module": "NodeNext",
-    "strict": true,
-    "verbatimModuleSyntax": true,
-    "skipLibCheck": true,
     "types": ["node"],
     "jsx": "react-jsx",
     "jsxImportSource": "hono/jsx",
     "outDir": "./dist"
-  },
-  "exclude": ["node_modules"]
+  }
 }
