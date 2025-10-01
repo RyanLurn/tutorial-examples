@@ -6,6 +6,10 @@ pre-commit:
       stage_fixed: true
 
 pre-push:
+  parallel: true
   jobs:
     - name: Check formatting and lint before pushing
-      run: pnpm exec biome check
+      run: turbo check
+
+    - name: Check types before pushing
+      run: turbo check-types
