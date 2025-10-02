@@ -22,8 +22,18 @@ out/
 build
 dist
 
-# Debug
+# Typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# Logs
+logs/
+*.log
 npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
 
 # Misc
 .DS_Store
