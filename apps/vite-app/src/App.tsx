@@ -1,3 +1,9 @@
+import { Button } from "@repo/ui/components/button";
+
 export default function App() {
-  return <h1>Hello World</h1>;
+  return (
+    <div className="flex justify-center items-center h-screen w-screen">
+      <Button>Button</Button>
+    </div>
+  );
 }
