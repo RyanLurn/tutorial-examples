@@ -9,7 +9,7 @@ pre-push:
   parallel: true
   jobs:
     - name: Check formatting and lint before pushing
-      run: turbo check
+      run: turbo check --ui stream
 
     - name: Check types before pushing
-      run: turbo check-types
+      run: turbo check-types --ui stream
